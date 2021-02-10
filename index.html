@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>POC on Tab close</title>
+</head>
+
+<body style="margin-top: 3em; text-align: center;">
+  <h1>Hello <i><a href="https://www.w3schools.com/jsref/event_onbeforeunload.asp" target="new">'onbeforeunload'</a></i> Event!</h1>
+  <p>The <a href="https://www.w3schools.com/jsref/event_onbeforeunload.asp" target="new">'onbeforeunload'</a> event occurs when the document is about to be unloaded.</p>
+</body>
+
+<script>
+
+  function InvalidateUserSession(e) {
+    console.log('event: ', e);
+    console.log('Requesting server to invalidate current Session ...');
+    $.ajax({
+      type: "POST",
+      url: 'invalidate-user-session-url',
+      async: false
+    });
+    return;
+  };
+
+  // Register event handler for "close tab/window” functionality:
+  window.onbeforeunload = InvalidateUserSession;
+  // Or
+  window.addEventListener("beforeunload", InvalidateUserSession);
+
+</script>
+
+</html>
