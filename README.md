@@ -14,8 +14,6 @@ The requirements is the following:
     - Do not call Logout API if the user already explicitly signed out
     - Count opened tabs to call Logout API only when the **last** web browser window or tab of the application is closed
 
-
-
 ## POC steps to reproduce
 
 ### 1. Open `index.html` Page in a Web Browser
