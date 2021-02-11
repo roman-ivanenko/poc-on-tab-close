@@ -2,10 +2,10 @@
 
 ## Requirements
 
-The requirements is the following:
+The requirements are the following:
 
 - The session management feature shall terminate (invalidate) the user backend session whenever the user closes the last web browser window or tab of the application **without explicitly logging out**.
-- If the user opens the page again using URL, bookmark, or history in the browser, he/she should be redirected to the login screen. So, the user cannot re-open any page of the application without Login procedure.
+- If the user opens the page again using URL, bookmark, or history in the browser, he/she should be redirected to the login screen. So, the user cannot re-open any page of the application without the Login procedure.
 
 ## Solution
 
